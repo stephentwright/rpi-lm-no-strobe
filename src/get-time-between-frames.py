@@ -20,7 +20,7 @@ def process_file(file_path):
         return None
 
 # Example usage
-file_path = 'timestamps.txt'  # Replace with your .txt file path
+file_path = './media/timestamps.txt'  # Replace with your .txt file path
 result = process_file(file_path)
 if result is not None:
     print("Reversed differences:", result)

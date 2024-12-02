@@ -35,8 +35,6 @@ direction_angle = math.pi / 4  # 45 degrees in radians
 
 # Compute new position
 new_point1 = new_position_on_sphere(initial_theta, initial_phi, angular_displacement, direction_angle)
-new_point2= new_position_on_sphere(initial_theta, initial_phi, angular_displacement, direction_angle*3)
-new_point3 = new_position_on_sphere(initial_theta, initial_phi, angular_displacement, direction_angle*4)
 
 # Define sphere parameters for plotting
 u = np.linspace(0, 2 * np.pi, 100)  # Azimuthal angle
@@ -59,8 +57,6 @@ ax.scatter(0, 0, 1, color='red', s=100, label="Initial Point (0, 0, 1)")
 
 # Plot the new point
 ax.scatter(*new_point1, color='blue', s=100, label="New Point")
-ax.scatter(*new_point2, color='green', s=100, label="New Point")
-ax.scatter(*new_point3, color='black', s=100, label="New Point")
 
 # Add labels and legend
 ax.set_xlabel('X')

@@ -78,5 +78,5 @@ def detect_ball_and_measure_radius(image_path):
     cv2.destroyAllWindows()
 
 # Example usage
-image_path = "0344.bmp"  # Replace with the path to your image
+image_path = "./media/0345.bmp"  # Replace with the path to your image
 detect_ball_and_measure_radius(image_path)

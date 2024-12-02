@@ -51,5 +51,5 @@ def detect_golf_ball(image_path):
         print("No golf ball detected.")
 
 # Path to the input image
-image_path = "0345.bmp"  # Replace with the path to your image
+image_path = "./media/0345.bmp"  # Replace with the path to your image
 detect_golf_ball(image_path)
