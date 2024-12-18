@@ -38,7 +38,7 @@ def detect_ball_and_crop(image_path):
             bottom_right_y = min(image.shape[0], y + r + 20)
             
             # add the detected circle around the crop
-            cv2.circle(gray, (x, y), r, (0, 255, 0), 1)      
+            #cv2.circle(gray, (x, y), r, (0, 255, 0), 1)      
             
             # Crop the square region
             cropped_image = gray[top_left_y:bottom_right_y, top_left_x:bottom_right_x]
